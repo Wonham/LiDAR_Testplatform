@@ -1,9 +1,21 @@
+# macOS
+.DS_Store
+._*
+
 # MATLAB
 *.asv
+*.m~
 *.p
+*.mex*
 *.mat
 *.fig
 *.log
+slprj/
+*.slxc
 
-# Output
-Result/
+# Local input data
+I*.txt
+
+# Generated output
+Result/*
+!Result/.gitkeep
