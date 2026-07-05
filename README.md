@@ -1,8 +1,8 @@
-# LiDAR Test Platform
+# OPA Characterization
 
-基于 MATLAB 的 LiDAR 测试数据处理平台，用于光学系统测量与光束质量评估。
+基于 MATLAB 的光学相控阵（Optical Phased Array, OPA）表征工具集，用于光学系统测量与光束质量评估。
 
-A MATLAB-based LiDAR test data processing platform for optical-system measurement and beam-quality evaluation.
+A MATLAB toolkit for optical phased array characterization, optical-system measurement, and beam-quality evaluation.
 
 ## 功能 | Features
 
@@ -21,7 +21,7 @@ A MATLAB-based LiDAR test data processing platform for optical-system measuremen
 ## 目录结构 | Project Structure
 
 ```text
-LiDAR_Testplatform/
+opa-characterization/
 ├── main.m          # 运行入口与测试参数
 ├── Module/         # 测试与评估模块
 ├── Tools/          # 数据导入和图像处理工具
@@ -30,7 +30,12 @@ LiDAR_Testplatform/
 
 ## 使用方法 | Usage
 
-1. 克隆仓库并在 MATLAB 中打开项目目录。
+```bash
+git clone https://github.com/Wonham/opa-characterization.git
+cd opa-characterization
+```
+
+1. 在 MATLAB 中打开项目目录。
 2. 将相机导出的测试数据命名为 `I0.txt`，放在项目根目录。
 3. 在 `main.m` 中调整相机参数、阈值，并注释不需要运行的模块。
 4. 运行 `main.m`。图像与文本结果会写入 `Result/`。
